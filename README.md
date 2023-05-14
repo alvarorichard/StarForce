@@ -25,6 +25,8 @@ O jogo é voltado para dispositivos mobile e utiliza a funcionalidade "Engine" p
 Problemas conhecidos
 
 Atualmente, há falhas no input em dispositivos mobile com Android. No entanto, o jogo funciona normalmente em PCs com Windows e Linux.
+
+
 Como compilar e executar o jogo
 
 Para compilar e executar o jogo, siga as instruções abaixo:
