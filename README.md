@@ -7,7 +7,7 @@ StarForce é um jogo 2D de nave com história de herói, voltado para dispositiv
 
     Gerente de Projetos: Matheus Rodrigues
     Arquitetos de Software: Lana Ribeiro e Rodrigo Souza
-    Desenvolvedor Front-end: Lana Ribeiro
+    Desenvolvedor GameDesign: Lana Ribeiro
     Desenvolvedores Back-end: Rodrigo Souza e Alvaro Richard
     DBA: Rodrigo Souza e Alvaro Richard
     QA: Matheus Rodrigues
