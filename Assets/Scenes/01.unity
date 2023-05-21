@@ -2427,3 +2427,63 @@ RectTransform:
   m_AnchoredPosition: {x: -44.8, y: 0.0000038147}
   m_SizeDelta: {x: 21.456955, y: 15.099338}
   m_Pivot: {x: 0.5, y: 0.5}
+<<<<<<< HEAD
+=======
+--- !u!1001 &4432843093275737913
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351872, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4432843093955351873, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+      propertyPath: m_Name
+      value: Estrelas
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d08fa4f3275158bc5adfa1c647efc05b, type: 3}
+>>>>>>> update
