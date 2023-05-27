@@ -11,6 +11,8 @@ public class FimJogo : MonoBehaviour
     public void Exibir(){
         this.gameObject.SetActive(true);
         this.textoPontuacao.text =  (ControladorPontuacao.Pontuacao +"x");
+
+        Debug.Log("Melhor pontuação: " + ControladorPontuacao.MelhorPontuacao);
         //pausa o jogo
         Time.timeScale = 0;
     }
