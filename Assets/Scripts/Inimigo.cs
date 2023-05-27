@@ -4,52 +4,83 @@ using UnityEngine;
 
 public class Inimigo : MonoBehaviour
 {
-
+    public SpriteRenderer spriteRenderer;
     public Rigidbody2D rigidbody;
     public float velocidadeMinima;
     public float velocidadeMaxima;
     private float velocidadeY;
     public int vidas;
-
-
     public ParticleSystem particulaExplosaoPrefab;
-
-
 
     // Start is called before the first frame update
     void Start()
     {
-        this.velocidadeY = Random.Range(this.velocidadeMinima, this.velocidadeMaxima);
-        
+        Vector2 posicaoAtual = transform.position;
+        float metadeLargura = Largura / 2f;
+
+        float pontoReferenciaEsquerda = posicaoAtual.x - metadeLargura;
+        float pontoReferenciaDireita = posicaoAtual.x + metadeLargura;
+
+        Camera camera = Camera.main;
+        Vector2 limiteInferiorEsquerdo = camera.ViewportToWorldPoint(Vector2.zero);
+        Vector2 limiteSuperiorDireito = camera.ViewportToWorldPoint(Vector2.one);
+
+        if (pontoReferenciaEsquerda < limiteInferiorEsquerdo.x)
+        {
+            float posicaoX = limiteInferiorEsquerdo.x + metadeLargura;
+            transform.position = new Vector2(posicaoX, posicaoAtual.y);
+        }
+        else if (pontoReferenciaDireita > limiteSuperiorDireito.x)
+        {
+            float posicaoX = limiteSuperiorDireito.x - metadeLargura;
+            transform.position = new Vector2(posicaoX, posicaoAtual.y);
+        }
+
+        velocidadeY = Random.Range(velocidadeMinima, velocidadeMaxima);
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.rigidbody.velocity = new Vector2(0, -this.velocidadeY);
+        rigidbody.velocity = new Vector2(0, -velocidadeY);
 
         Camera camera = Camera.main;
-        Vector3 posicaoNaCamera = camera.WorldToViewportPoint(this.transform.position);
-        if(posicaoNaCamera.y < 0)
+        Vector3 posicaoNaCamera = camera.WorldToViewportPoint(transform.position);
+        if (posicaoNaCamera.y < 0)
         {
-            //jogador jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<Jogador>();
             jogador jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<jogador>();
-
-             jogador.Vida--;
+            jogador.Vida--;
             Destruir(false);
         }
-  
-    
     }
 
     public void ReceberDano()
     {
-        this.vidas--;
-        if(vidas <= 0)
+        vidas--;
+        if (vidas <= 0)
         {
             Destruir(true);
         }
     }
+
+   private float Largura
+{
+    get
+    {
+        if (spriteRenderer != null)
+        {
+            Bounds bounds = spriteRenderer.bounds;
+            Vector3 tamanho = bounds.size;
+            return tamanho.x;
+        }
+        else
+        {
+            Debug.LogError("A variável spriteRenderer não foi atribuída no Inspector.");
+            return 0f;
+        }
+    }
+}
+
 
     private void Destruir(bool derrotado)
     {
@@ -57,15 +88,8 @@ public class Inimigo : MonoBehaviour
         {
             ControladorPontuacao.Pontuacao++;
         }
-        // Instatiate(this.particulaExplosaoPrefab, this.transform.position, Quarternion.identity);
-       ParticleSystem ParticulaExplosao = Instantiate(this.particulaExplosaoPrefab, this.transform.position, Quaternion.identity);
-        Destroy(ParticulaExplosao.gameObject,1f);
-
-
-
-        Destroy(this.gameObject);
+        ParticleSystem particulaExplosao = Instantiate(particulaExplosaoPrefab, transform.position, Quaternion.identity);
+        Destroy(particulaExplosao.gameObject, 1f);
+        Destroy(gameObject);
     }
-
 }
-
-
