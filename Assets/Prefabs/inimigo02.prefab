@@ -122,11 +122,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b3441438c7d55b42bd00449b0fc322f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 0}
   rigidbody: {fileID: 4349596066014494172}
   velocidadeMinima: 1.5
   velocidadeMaxima: 2
   vidas: 5
   particulaExplosaoPrefab: {fileID: 5508945031746923992, guid: bd243123bd7403745b611ad51648af84, type: 3}
+  chanceSoltarItemVida: 30
+  itemVidaPrefab: {fileID: 2075649211494569858, guid: 90d66df8481bc0342b6f6b655fb29912, type: 3}
 --- !u!61 &1505022511927184365
 BoxCollider2D:
   m_ObjectHideFlags: 0

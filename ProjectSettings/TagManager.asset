@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Inimigo
   - TelaFimJogo
+  - ItemVida
   layers:
   - Default
   - TransparentFX

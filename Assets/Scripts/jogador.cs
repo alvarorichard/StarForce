@@ -5,6 +5,9 @@ using UnityEngine;
 public class jogador : MonoBehaviour
 {
 
+
+     private const int QuantidadeMaximasVidas = 5;
+
     public Rigidbody2D rigidbody;
     public float velocidadeMovimento;
     public Laser laserPrefab;
@@ -23,7 +26,7 @@ public class jogador : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.vidas = 5;
+        this.vidas = QuantidadeMaximasVidas;
         this.intervaloTiro = 0;
         this.armaAtual = this.posicoesArmas[0];
         ControladorPontuacao.Pontuacao = 0;
@@ -145,10 +148,15 @@ private float Altura{
 
 
  private void OnTriggerEnter2D(Collider2D collider) {
+    //Debug.Log("Colidiu com: " + collider.tag);
         if (collider.CompareTag("Inimigo")) {
             Vida--;
             Inimigo inimigo = collider.GetComponent<Inimigo>();
             inimigo.ReceberDano();
+        }else if(collider.CompareTag("ItemVida")){
+            ItemVida itemVida = collider.GetComponent<ItemVida>();
+            vidas += itemVida.QuantidadeVidas;
+            Destroy(collider.gameObject);
         }
     }
 
@@ -160,11 +168,15 @@ private float Altura{
         }
         set {
             this.vidas = value;
-            if (this.vidas <= 0) {
+            if(this.vidas > QuantidadeMaximasVidas){
+                this.vidas = QuantidadeMaximasVidas;
+            }else if(this.vidas < 0){
                 this.vidas = 0;
+            
                 this.gameObject.SetActive(false);
                 // Exibir tela de fim de jogo               
                 TelaFimJogo.Exibir();
+
             }
         }
     }

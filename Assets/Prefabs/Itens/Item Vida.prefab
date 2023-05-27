@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2075649211494569858}
   m_Layer: 0
   m_Name: Item Vida
-  m_TagString: Untagged
+  m_TagString: ItemVida
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

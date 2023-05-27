@@ -13,4 +13,9 @@ public class ItemVida : MonoBehaviour
         }
     }
 
+    public void Coletar(){
+        Debug.Log("Coletou item de vida");
+        Destroy(this.gameObject);
+    }
+
 }
