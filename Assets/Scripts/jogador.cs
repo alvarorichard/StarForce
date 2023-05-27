@@ -12,7 +12,7 @@ public class jogador : MonoBehaviour
     public float velocidadeMovimento;
     public Laser laserPrefab;
     public float tempoEsperaTiro;
-        private float intervaloTiro;
+    private float intervaloTiro;
 
     public Transform[] posicoesArmas;
     private Transform armaAtual;
