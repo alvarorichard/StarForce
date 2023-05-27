@@ -55,8 +55,13 @@ public class Inimigo : MonoBehaviour
         Vector3 posicaoNaCamera = camera.WorldToViewportPoint(transform.position);
         if (posicaoNaCamera.y < 0)
         {
-            jogador jogador = GameObject.FindGameObjectWithTag("Player").GetComponent<jogador>();
-            jogador.Vida--;
+            jogador jogador = GameObject.FindGameObjectWithTag("Player")?.GetComponent<jogador>();
+            if (jogador != null)
+            {
+                jogador.Vida--;
+                Destruir(false);
+            }
+            //jogador.Vida--;
             Destruir(false);
         }
     }
