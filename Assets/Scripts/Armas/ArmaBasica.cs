@@ -2,22 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArmaBasica : MonoBehaviour
+public abstract class  ArmaBasica : MonoBehaviour
 {
 
     public Laser laserPrefab;
     public float tempoEsperaTiro;
     private float intervaloTiro;
-    public Transform[] posicoesArmas;
-    private Transform armaAtual;
+    public Transform[] posicoesDisparo;
 
 
     // Start is called before the first frame update
-    void Start()
+    public virtual void   Start()
     {
         
          this.intervaloTiro = 0;
-        this.armaAtual = this.posicoesArmas[0];
 
     }
 
@@ -33,17 +31,12 @@ public class ArmaBasica : MonoBehaviour
         
     }
 
-     private void Atirar()
-    {
-        Instantiate(this.laserPrefab, this.armaAtual.position, Quaternion.identity);
-        if (this.armaAtual == this.posicoesArmas[0])
-        {
-            this.armaAtual = this.posicoesArmas[1];
-        }
-        else
-        {
-            this.armaAtual = this.posicoesArmas[0];
-        }
+    protected void CriarLaser(Vector2 posicao){
+        Instantiate(this.laserPrefab, posicao, Quaternion.identity);
+
     }
+
+     protected abstract void Atirar();
+    
     
 }
