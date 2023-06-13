@@ -10,12 +10,8 @@ public class jogador : MonoBehaviour
 
     public Rigidbody2D rigidbody;
     public float velocidadeMovimento;
-    public Laser laserPrefab;
-    public float tempoEsperaTiro;
-    private float intervaloTiro;
+  
 
-    public Transform[] posicoesArmas;
-    private Transform armaAtual;
 
     private int vidas;
     private FimJogo TelaFimJogo;
@@ -27,8 +23,6 @@ public class jogador : MonoBehaviour
     void Start()
     {
         this.vidas = QuantidadeMaximasVidas;
-        this.intervaloTiro = 0;
-        this.armaAtual = this.posicoesArmas[0];
         ControladorPontuacao.Pontuacao = 0;
         GameObject fimJogoGameObject = GameObject.FindGameObjectWithTag("TelaFimJogo");
         this.TelaFimJogo = fimJogoGameObject.GetComponent<FimJogo>();
@@ -43,12 +37,7 @@ public class jogador : MonoBehaviour
 
     
 
-        this.intervaloTiro += Time.deltaTime;
-        if (this.intervaloTiro >= this.tempoEsperaTiro)
-        {
-            this.intervaloTiro = 0;
-            Atirar();
-        }
+    
 
 
         float horizontal = Input.GetAxis("Horizontal");
@@ -181,17 +170,5 @@ private float Altura{
         }
     }
 
-    private void Atirar()
-    {
-        Instantiate(this.laserPrefab, this.armaAtual.position, Quaternion.identity);
-        if (this.armaAtual == this.posicoesArmas[0])
-        {
-            this.armaAtual = this.posicoesArmas[1];
-        }
-        else
-        {
-            this.armaAtual = this.posicoesArmas[0];
-        }
-    }
-    
+   
 }
