@@ -8,7 +8,8 @@ public class ArmaDisparoAlternado : ArmaBasica
 
  private Transform posicaoProximoDisparo;
 
- public void Start(){
+ public override void Start(){
+        base.Start();
     this.posicaoProximoDisparo = this.posicoesDisparo[0];
  }
  protected override void Atirar(){
