@@ -19,6 +19,10 @@ public class ControladorArma : MonoBehaviour
      this.ArmaAtual = this.armaDisparoAlternado;
  }
 
+ public void EquiparArmaDisparoDuplo(){
+     this.ArmaAtual = this.armaDisparoDuplo;
+ }
+
  private ArmaBasica ArmaAtual{
     set{
         if(this.armaAtual != null){
