@@ -18,6 +18,8 @@ public class jogador : MonoBehaviour
 
     public SpriteRenderer spriteRenderer;
 
+    [SerializeField]
+ private ControladorArma controladorArma;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +29,8 @@ public class jogador : MonoBehaviour
         GameObject fimJogoGameObject = GameObject.FindGameObjectWithTag("TelaFimJogo");
         this.TelaFimJogo = fimJogoGameObject.GetComponent<FimJogo>();
         this .TelaFimJogo.Esconder();
+        this.controladorArma.EquiparArmaDisparoAlternado();
+        
 
     }
 
