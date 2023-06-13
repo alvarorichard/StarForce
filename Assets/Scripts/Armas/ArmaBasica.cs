@@ -37,6 +37,16 @@ public abstract class  ArmaBasica : MonoBehaviour
     }
 
      protected abstract void Atirar();
+
+     public void Ativar(){
+         this.gameObject.SetActive(true);
+     }
     
     
+public void Desativar(){
+    this.gameObject.SetActive(false);
+
+}
+
+
 }
