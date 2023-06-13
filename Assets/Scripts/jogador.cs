@@ -175,6 +175,7 @@ private float Altura{
         EfeitoPowerUp efeitoPowerUp = powerUp.EfeitoPowerUp;
         efeitoPowerUp.Aplicar(this);
       //  Destroy(powerUp.gameObject);
+      powerUp.Coletar();
 
     }
 
