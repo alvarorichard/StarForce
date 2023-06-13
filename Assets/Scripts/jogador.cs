@@ -150,14 +150,32 @@ private float Altura{
  private void OnTriggerEnter2D(Collider2D collider) {
     //Debug.Log("Colidiu com: " + collider.tag);
         if (collider.CompareTag("Inimigo")) {
-            Vida--;
             Inimigo inimigo = collider.GetComponent<Inimigo>();
-            inimigo.ReceberDano();
+            ColidirInimigo(inimigo);
         }else if(collider.CompareTag("ItemVida")){
             ItemVida itemVida = collider.GetComponent<ItemVida>();
-            vidas += itemVida.QuantidadeVidas;
-            Destroy(collider.gameObject);
+            ColetarItemVida(itemVida);
+        }else if (collider.CompareTag("PowerUp")){
+               PowerUpColetavel powerUp = collider.GetComponent<PowerUpColetavel>();
+                ColetarPowerUp(powerUp);
         }
+    }
+
+    private void ColidirInimigo(Inimigo inimigo){
+        Vida--;
+        inimigo.ReceberDano();
+    }
+
+    private void ColetarItemVida(ItemVida itemVida){
+        Vida += itemVida.QuantidadeVidas;
+        Destroy(itemVida.gameObject);
+    }
+
+    private void ColetarPowerUp(PowerUpColetavel powerUp){
+        EfeitoPowerUp efeitoPowerUp = powerUp.EfeitoPowerUp;
+        efeitoPowerUp.Aplicar(this);
+      //  Destroy(powerUp.gameObject);
+
     }
 
 
