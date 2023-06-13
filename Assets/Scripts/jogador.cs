@@ -29,8 +29,7 @@ public class jogador : MonoBehaviour
         GameObject fimJogoGameObject = GameObject.FindGameObjectWithTag("TelaFimJogo");
         this.TelaFimJogo = fimJogoGameObject.GetComponent<FimJogo>();
         this .TelaFimJogo.Esconder();
-        this.controladorArma.EquiparArmaDisparoAlternado();
-        
+         EquiparArmaDisparoAlternado();
 
     }
 
@@ -75,6 +74,14 @@ public class jogador : MonoBehaviour
         this.rigidbody.velocity = new Vector2(velocidadeX, velocidadeY);
          VerificarLimiteTela();
 
+    }
+
+    public void EquiparArmaDisparoAlternado(){
+        this.controladorArma.EquiparArmaDisparoAlternado();
+    }
+
+    public void EquiparArmaDisparoDuplo(){
+        this.controladorArma.EquiparArmaDisparoDuplo();
     }
 
     private void VerificarLimiteTela(){
