@@ -115,7 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spriteRenderer: {fileID: 6319887702222669367}
-  intervaloTempoAntesAutoDestruir: 5
+  intervaloTempoAntesAutoDestruir: 2
   intervaloTempoEntrePiscadas: 1
-  quantidadeTotalPiscadas: 10
+  quantidadeTotalPiscadas: 3
   reducaoTempoEntrePiscadas: 0.005
