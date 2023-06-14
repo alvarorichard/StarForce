@@ -208,5 +208,9 @@ private float Altura{
         }
     }
 
+    public void AtivarEscudo(){
+        this.escudo.Ativar();
+    }
+
    
 }

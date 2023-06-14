@@ -7,7 +7,7 @@ public class PowerUpEscudo : PowerUpColetavel
     
 public override EfeitoPowerUp EfeitoPowerUp{
     get{
-        return EfeitoPowerUp.Escudo;
+        return new EfeitoPowerUpEscudo();
     }
 }
 

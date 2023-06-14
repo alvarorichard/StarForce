@@ -14,6 +14,7 @@ public class Escudo : MonoBehaviour
      private int protecaoAtual;
 
      public void Ativar(){
+        this.protecaoAtual = this.protecaoTotal;
         this.gameObject.SetActive(true);
      }
 
