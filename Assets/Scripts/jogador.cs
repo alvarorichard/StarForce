@@ -21,6 +21,12 @@ public class jogador : MonoBehaviour
     [SerializeField]
  private ControladorArma controladorArma;
 
+
+    [SerializeField]
+    private Escudo escudo;
+
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,8 @@ public class jogador : MonoBehaviour
         this.TelaFimJogo = fimJogoGameObject.GetComponent<FimJogo>();
         this .TelaFimJogo.Esconder();
          EquiparArmaDisparoAlternado();
+
+         this.escudo.Desativar();
 
     }
 
