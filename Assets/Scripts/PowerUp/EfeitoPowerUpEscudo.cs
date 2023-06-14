@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class EfeitoPowerUpEscudo : EfeitoPowerUp
 {
-  public override void Aplicar(jogador jogdor){
-    jogador.AtivarEscudo();
-
-  }
-
-
+    public override void Aplicar(jogador jogador)
+    {
+        jogador.AtivarEscudo();
+    }
 }

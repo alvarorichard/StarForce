@@ -31,7 +31,7 @@ public class Escudo : MonoBehaviour
      public void ReceberDano(){
         this.protecaoAtual--;
         if(this.protecaoAtual <= 0){
-            this.Desativar();
+            Desativar();
         }
      }
 
