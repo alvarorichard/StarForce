@@ -14,4 +14,8 @@ public class EfeitoPowerUpDisparoDuplo : EfeitoPowerUp
 
     }
 
+    public override void Remover(jogador jogador)
+    {
+    }
+
 }

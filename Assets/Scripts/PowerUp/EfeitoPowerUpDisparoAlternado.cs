@@ -8,4 +8,8 @@ public class EfeitoPowerUpDisparoAlternado :EfeitoPowerUp
  public override void Aplicar(jogador jogador){
      jogador.EquiparArmaDisparoAlternado(); 
  }
+
+    public override void Remover(jogador jogador){
+    
+    }
 }

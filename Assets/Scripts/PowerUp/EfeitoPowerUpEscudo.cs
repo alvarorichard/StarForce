@@ -8,4 +8,8 @@ public class EfeitoPowerUpEscudo : EfeitoPowerUp
     {
         jogador.AtivarEscudo();
     }
+
+    public override void Remover(jogador jogador)
+    {
+    }
 }
