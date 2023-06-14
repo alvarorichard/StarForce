@@ -63,9 +63,10 @@ public abstract class PowerUpColetavel : MonoBehaviour
 // esperar um intervalo de tempo 
 
   yield return new WaitForSeconds(this.intervaloTempoEntrePiscadas);
+      contadorPiscadas++;
+
   this.intervaloTempoEntrePiscadas -= contadorPiscadas * this.reducaoTempoEntrePiscadas;
 
-    contadorPiscadas++;
 
    }while(contadorPiscadas < this.quantidadeTotalPiscadas);
    Destroy(this.gameObject);
