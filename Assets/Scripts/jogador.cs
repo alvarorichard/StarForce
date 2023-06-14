@@ -170,7 +170,15 @@ private float Altura{
     }
 
     private void ColidirInimigo(Inimigo inimigo){
-        Vida--;
+    if(this.escudo.Ativo){
+        this.escudo.ReceberDano();
+        
+        
+    }else{
+         Vida--;
+
+    }
+
         inimigo.ReceberDano();
     }
 
@@ -186,6 +194,8 @@ private float Altura{
       powerUp.Coletar();
 
     }
+     
+    
 
 
 
