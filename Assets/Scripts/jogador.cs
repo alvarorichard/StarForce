@@ -200,6 +200,11 @@ private float Altura{
     }
 
     private void ColetarPowerUp(PowerUpColetavel powerUp){
+
+        if(this.powerUpAtual != null){
+            this.powerUpAtual.Remover(this);
+        }
+
         EfeitoPowerUp efeitoPowerUp = powerUp.EfeitoPowerUp;
         efeitoPowerUp.Aplicar(this);
       //  Destroy(powerUp.gameObject);

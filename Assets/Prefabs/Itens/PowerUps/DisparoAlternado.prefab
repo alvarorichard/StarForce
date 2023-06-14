@@ -119,3 +119,4 @@ MonoBehaviour:
   intervaloTempoEntrePiscadas: 1
   quantidadeTotalPiscadas: 3
   reducaoTempoEntrePiscadas: 0.005
+  duracaoEmSegundos: 10
