@@ -16,7 +16,7 @@ public abstract class EfeitoPowerUp
 
     public abstract void Remover(jogador jogador);
 
-    public void Autalizar(){
+    public void Atualizar(){
 
         if(Ativo){
         this.duracaoEmSegundos -= Time.deltaTime;

@@ -25,6 +25,8 @@ public class jogador : MonoBehaviour
     [SerializeField]
     private Escudo escudo;
 
+    private EfeitoPowerUp powerUpAtual;
+
 
 
     // Start is called before the first frame update
@@ -81,6 +83,16 @@ public class jogador : MonoBehaviour
 
         this.rigidbody.velocity = new Vector2(velocidadeX, velocidadeY);
          VerificarLimiteTela();
+
+            if(this.powerUpAtual != null){
+                this.powerUpAtual.Atualizar();
+                if(!this.powerUpAtual.Ativo){
+                    this.powerUpAtual.Remover(this);
+                    this.powerUpAtual = null;
+                }
+            }
+
+
 
     }
 
@@ -192,6 +204,8 @@ private float Altura{
         efeitoPowerUp.Aplicar(this);
       //  Destroy(powerUp.gameObject);
       powerUp.Coletar();
+      this.powerUpAtual = efeitoPowerUp;
+
 
     }
      
