@@ -108,6 +108,7 @@ public class Inimigo : MonoBehaviour
             ControladorPontuacao.Pontuacao++;
 
             SoltarItemVida();
+            SoltarPowerUp();
 
 
         }
