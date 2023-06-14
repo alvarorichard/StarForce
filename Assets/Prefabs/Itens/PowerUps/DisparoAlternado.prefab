@@ -114,3 +114,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 697ef4214cde4f5709992da1a7e61ac0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 6319887702222669367}
+  intervaloTempoAntesAutoDestruir: 5
+  intervaloTempoEntrePiscadas: 1
+  quantidadeTotalPiscadas: 10
+  reducaoTempoEntrePiscadas: 0.005

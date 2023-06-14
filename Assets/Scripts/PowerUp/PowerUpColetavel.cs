@@ -5,19 +5,22 @@ using UnityEngine;
 public abstract class PowerUpColetavel : MonoBehaviour
 {
    [SerializeField]
-   private SpriteRender spriteRender;
+   private SpriteRenderer  spriteRenderer;
 
-  [SerializedField]
+  [SerializeField]
    private float intervaloTempoAntesAutoDestruir;
 
    private float contagemTempoAntesAutoDestruir;
    private bool autodestruindo;
 
-   [SerializedField]
+   [SerializeField]
    private float intervaloTempoEntrePiscadas;
 
-   [SerializedField]
+   [SerializeField]
    private int quantidadeTotalPiscadas;
+
+   [SerializeField]
+    private float reducaoTempoEntrePiscadas;
    
 
 
@@ -45,6 +48,7 @@ public abstract class PowerUpColetavel : MonoBehaviour
 
    private void IniciarAutoDestruicao(){
    this.autodestruindo = true;
+    StartCoroutine(Autodestruir());
 
    
 
@@ -55,14 +59,16 @@ public abstract class PowerUpColetavel : MonoBehaviour
    do{
       
 
-     this.spriteRender.enabled = !this.spriteRender.enabled;
+     this.spriteRenderer.enabled = !this.spriteRenderer.enabled;
 // esperar um intervalo de tempo 
 
-  yield return new WaitForSeconds(3f);
+  yield return new WaitForSeconds(this.intervaloTempoEntrePiscadas);
+  this.intervaloTempoEntrePiscadas -= contadorPiscadas * this.reducaoTempoEntrePiscadas;
 
     contadorPiscadas++;
 
    }while(contadorPiscadas < this.quantidadeTotalPiscadas);
+   Destroy(this.gameObject);
 
  }
 
