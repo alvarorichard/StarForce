@@ -7,7 +7,7 @@ public class PowerUpEscudo : PowerUpColetavel
     
 public override EfeitoPowerUp EfeitoPowerUp{
     get{
-        return new EfeitoPowerUpEscudo();
+        return new EfeitoPowerUpEscudo(DuracaoEmSegundos);
     }
 }
 

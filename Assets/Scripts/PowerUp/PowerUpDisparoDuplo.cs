@@ -7,7 +7,7 @@ public class PowerUpDisparoDuplo : PowerUpColetavel
 
     public  override EfeitoPowerUp EfeitoPowerUp{
         get{
-            return new EfeitoPowerUpDisparoDuplo();
+            return new EfeitoPowerUpDisparoDuplo(DuracaoEmSegundos);
         }
     }
 }

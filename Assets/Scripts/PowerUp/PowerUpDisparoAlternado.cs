@@ -8,7 +8,7 @@ public class PowerUpDisparoAlternado : PowerUpColetavel
     {
         get
         {
-            return new EfeitoPowerUpDisparoAlternado();
+            return new EfeitoPowerUpDisparoAlternado(DuracaoEmSegundos);
         }
     }
 }

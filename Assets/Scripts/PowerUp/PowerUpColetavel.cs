@@ -24,6 +24,9 @@ public abstract class PowerUpColetavel : MonoBehaviour
 
     private float tempoDesaparecer;
 
+    [SerializeField]
+     private float duracaoEmSegundos;
+
     public void Start()
     {
         this.autodestruindo = false;
@@ -52,6 +55,14 @@ public abstract class PowerUpColetavel : MonoBehaviour
     }
 
     public abstract EfeitoPowerUp EfeitoPowerUp { get; }
+
+    public float DuracaoEmSegundos
+    {
+        get
+        {
+            return this.duracaoEmSegundos;
+        }
+    }
 
     public void Coletar()
     {
