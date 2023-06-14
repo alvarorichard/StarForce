@@ -236,5 +236,9 @@ private float Altura{
         this.escudo.Ativar();
     }
 
+    public void DesativarEscudo(){
+        this.escudo.Desativar();
+    }
+
    
 }

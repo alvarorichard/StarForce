@@ -5,6 +5,11 @@ using UnityEngine;
 public class EfeitoPowerUpDisparoDuplo : EfeitoPowerUp
 {
 
+    public EfeitoPowerUpDisparoDuplo(float duracaoEmSegundos) : base(duracaoEmSegundos)
+    {
+        
+    }
+
     public override void Aplicar(jogador jogador)
     {
          //acessar o script jogador 
@@ -16,6 +21,7 @@ public class EfeitoPowerUpDisparoDuplo : EfeitoPowerUp
 
     public override void Remover(jogador jogador)
     {
+        jogador.EquiparArmaDisparoAlternado();
     }
 
 }

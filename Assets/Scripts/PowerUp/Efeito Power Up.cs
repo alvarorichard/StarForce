@@ -20,6 +20,7 @@ public abstract class EfeitoPowerUp
 
         if(Ativo){
         this.duracaoEmSegundos -= Time.deltaTime;
+        Debug.Log("Tempo restante: " + this.duracaoEmSegundos);
 
         }
     }
