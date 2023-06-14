@@ -19,6 +19,13 @@ public class Inimigo : MonoBehaviour
     [SerializeField]
     private ItemVida itemVidaPrefab;
 
+    [SerializeField]
+    [Range(0, 100)]
+    private float chanceSoltarPowerUp;
+
+    [SerializeField]
+    private PowerUpColetavel[] powerUpPrefabs;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -101,6 +108,8 @@ public class Inimigo : MonoBehaviour
             ControladorPontuacao.Pontuacao++;
 
             SoltarItemVida();
+
+
         }
         ParticleSystem particulaExplosao = Instantiate(particulaExplosaoPrefab, transform.position, Quaternion.identity);
         Destroy(particulaExplosao.gameObject, 1f);
@@ -113,6 +122,16 @@ public class Inimigo : MonoBehaviour
         if(chanceAleatoria <= this.chanceSoltarItemVida){
             
             Instantiate(this.itemVidaPrefab, transform.position, Quaternion.identity);
+        }
+    }
+
+    private void SoltarPowerUp(){
+        float chanceAleatoria = Random.Range(0f, 100f);
+        if(chanceAleatoria <= this.chanceSoltarPowerUp){
+            int indiceAleatorio = Random.Range(0, this.powerUpPrefabs.Length);
+            PowerUpColetavel powerUpPrefab = this.powerUpPrefabs[indiceAleatorio];
+            Instantiate(powerUpPrefab, transform.position, Quaternion.identity);
+           
         }
     }
 }
