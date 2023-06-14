@@ -11,7 +11,7 @@ public class EfeitoPowerUpDisparoDuplo : EfeitoPowerUp
             //acessar o script controlador de arma e alterar a arma atual para a arma de disparo duplo
         
         jogador.EquiparArmaDisparoDuplo();
-        
+
     }
 
 }
