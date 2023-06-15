@@ -21,6 +21,7 @@ public class ControladorArma : MonoBehaviour
  private void Awake() {
     this.armaDisparoAlternado.Desativar();
     this.armaDisparoDuplo.Desativar();
+    this.armaDisparoEspalhado.Desativar();
     
 
  }

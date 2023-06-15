@@ -37,8 +37,8 @@ public class jogador : MonoBehaviour
         GameObject fimJogoGameObject = GameObject.FindGameObjectWithTag("TelaFimJogo");
         this.TelaFimJogo = fimJogoGameObject.GetComponent<FimJogo>();
         this .TelaFimJogo.Esconder();
-        EquiparArmaDisparoEspalhado();
-        // EquiparArmaDisparoAlternado();
+       // EquiparArmaDisparoEspalhado();
+         EquiparArmaDisparoAlternado();
 
          this.escudo.Desativar();
 
