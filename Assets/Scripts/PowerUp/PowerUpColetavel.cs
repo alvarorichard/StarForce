@@ -25,7 +25,7 @@ public abstract class PowerUpColetavel : MonoBehaviour
     private float tempoDesaparecer;
 
     [SerializeField]
-     private float duracaoEmSegundos;
+     protected float duracaoEmSegundos;
 
     public void Start()
     {
