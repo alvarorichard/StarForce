@@ -17,8 +17,24 @@ public class ArmaDisparoEspalhado : ArmaBasica
 
     Vector2 posicaoDisparo = this.posicoesDisparo[0].position;
 
-    Laser laser = CriarLaser (posicaoDisparo);
-    //laser.Direcao =
+    for(int i = 0; i< this.quantidadeDisparos; i++){
+ Laser laser = CriarLaser (posicaoDisparo);
+    laser.Direcao = CalcularDirecaoDisparo(i);
+    }
+
+   
+
+   }
+
+   private Vector2 CalcularDirecaoDisparo(int indiceDisparo){
+
+  float angulo = (this.anguloEntreDisparos * indiceDisparo);
+
+  Quaternion rotacao = Quaternion.AngleAxis(angulo,Vector3.forward);
+
+  Vector2 direcao = rotacao * Vector3.up;
+
+  return direcao;
 
    }
    
