@@ -4,15 +4,17 @@ using UnityEngine;
 
 public class EfeitoPowerUpDisparoEspalhado : EfeitoPowerUp
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public EfeitoPowerUpDisparoEspalhado(float duracaoEmSegundos) : base(duracaoEmSegundos)
     {
-        
+    }
+   
+   public override void Aplicar (jogador jogador){
+         jogador.EquiparArmaDisparoEspalhado();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public override void Remover(jogador jogador){
+       jogador.EquiparArmaDisparoAlternado();
     }
+   
 }
