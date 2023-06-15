@@ -29,7 +29,7 @@ public class Laser : MonoBehaviour
     public Vector2 Direcao{
         set{
             this.transform.up = value;
-            this.rigidbody.velocity = new Vector2(0, this.velocidadeY);
+            this.rigidbody.velocity = this.transform.up * this.velocidadeY;
 
         }
 
