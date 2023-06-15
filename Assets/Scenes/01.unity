@@ -2492,8 +2492,8 @@ MonoBehaviour:
   tempoEsperaTiro: 0.15
   posicoesDisparo:
   - {fileID: 485386507}
-  anguloEntreDisparos: 0
-  quantidadeDisparos: 0
+  anguloEntreDisparos: 5
+  quantidadeDisparos: 6
 --- !u!1 &1684010303
 GameObject:
   m_ObjectHideFlags: 0
