@@ -5,8 +5,8 @@ using UnityEngine;
 public class jogador : MonoBehaviour
 {
 
-
-     private const int QuantidadeMaximasVidas = 5;
+ /// alterando vida para teste lembrar de deixar padrao depois
+     private const int QuantidadeMaximasVidas = 5000;
 
     public Rigidbody2D rigidbody;
     public float velocidadeMovimento;
@@ -37,7 +37,8 @@ public class jogador : MonoBehaviour
         GameObject fimJogoGameObject = GameObject.FindGameObjectWithTag("TelaFimJogo");
         this.TelaFimJogo = fimJogoGameObject.GetComponent<FimJogo>();
         this .TelaFimJogo.Esconder();
-         EquiparArmaDisparoAlternado();
+        EquiparArmaDisparoEspalhado();
+        // EquiparArmaDisparoAlternado();
 
          this.escudo.Desativar();
 
@@ -102,6 +103,10 @@ public class jogador : MonoBehaviour
 
     public void EquiparArmaDisparoDuplo(){
         this.controladorArma.EquiparArmaDisparoDuplo();
+    }
+
+    public void EquiparArmaDisparoEspalhado(){
+        this.controladorArma.EquiparArmaDisparoEspalhado();
     }
 
     private void VerificarLimiteTela(){

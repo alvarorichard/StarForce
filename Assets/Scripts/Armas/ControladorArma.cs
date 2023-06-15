@@ -14,12 +14,19 @@ public class ControladorArma : MonoBehaviour
 
  private ArmaBasica armaAtual;
 
+[SerializeField]
+ private ArmaDisparoEspalhado armaDisparoEspalhado;
+
 
  private void Awake() {
     this.armaDisparoAlternado.Desativar();
     this.armaDisparoDuplo.Desativar();
     
 
+ }
+
+ public void EquiparArmaDisparoEspalhado(){
+     this.ArmaAtual = this.armaDisparoEspalhado;
  }
 
 
