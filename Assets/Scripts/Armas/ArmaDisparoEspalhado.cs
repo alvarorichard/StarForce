@@ -8,7 +8,8 @@ public class ArmaDisparoEspalhado : ArmaBasica
 
     Vector2 posicaoDisparo = this.posicoesDisparo[0].position;
 
-    CriarLaser(posicaoDisparo);
+    Laser laser = (posicaoDisparo);
+    //laser.Direcao =
 
    }
    

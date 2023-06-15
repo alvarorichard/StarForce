@@ -9,7 +9,7 @@ public class Laser : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        this.rigidbody.velocity = new Vector2(0, this.velocidadeY);
+        Direcao = this.transform.up;
     }
 
     // Update is called once per frame
@@ -22,9 +22,19 @@ public class Laser : MonoBehaviour
             Destroy(this.gameObject);
 
         }
-
+         
         
     }
+
+    public Vector2 Direcao{
+        set{
+            this.transform.up = value;
+            this.rigidbody.velocity = new Vector2(0, this.velocidadeY);
+
+        }
+
+    }
+
     public void OnTriggerEnter2D(Collider2D collider)
     {
         
