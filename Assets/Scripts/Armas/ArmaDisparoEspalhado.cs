@@ -28,7 +28,19 @@ public class ArmaDisparoEspalhado : ArmaBasica
 
    private Vector2 CalcularDirecaoDisparo(int indiceDisparo){
 
-  float angulo = (this.anguloEntreDisparos * indiceDisparo);
+    int indiceDisparoArco;
+
+    if((this.quantidadeDisparos %2) == 0 ){
+        indiceDisparoArco = indiceDisparo + 1;
+
+    }else {
+        indiceDisparoArco = indiceDisparo;
+
+    }
+
+    indiceDisparoArco = Mathf.CeilToInt(indiceDisparoArco /2f);
+
+  float angulo = (this.anguloEntreDisparos * indiceDisparoArco);
 
   Quaternion rotacao = Quaternion.AngleAxis(angulo,Vector3.forward);
 
