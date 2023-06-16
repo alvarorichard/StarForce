@@ -26,6 +26,10 @@ O jogo é voltado para dispositivos mobile e utiliza a funcionalidade "Engine" p
 
 Atualmente, há falhas no input em dispositivos mobile com Android. No entanto, o jogo funciona normalmente em PCs com Windows e Linux.
 
+<h1>Documentação</h1>
+
+https://drive.google.com/file/d/14blYluBPu0At3ImXSM3I_sYiw2dg5X8f/view?usp=sharing
+
 # click no video para ver mais sobre  
 [![click aqui para ver o video ](https://img.youtube.com/vi/aEPwJ4XZwks/0.jpg)](https://youtu.be/aEPwJ4XZwks)
 
