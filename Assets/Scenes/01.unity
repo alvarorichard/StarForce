@@ -914,6 +914,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 567664387}
   m_CullTransparentMesh: 1
+--- !u!1001 &643219537
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.086
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669364, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6319887702222669369, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
+      propertyPath: m_Name
+      value: DisparoEspalhado
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 653358f75be07ae39ab6ba8d4b7679d4, type: 3}
 --- !u!1 &660124415
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,7 +2044,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.11999512, y: -0.97998047}
+  m_AnchoredPosition: {x: -0.11999512, y: -0.9799957}
   m_SizeDelta: {x: 4.3498, y: 4.9359}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1230516598
@@ -2492,8 +2549,8 @@ MonoBehaviour:
   tempoEsperaTiro: 0.15
   posicoesDisparo:
   - {fileID: 485386507}
-  anguloEntreDisparos: 5
-  quantidadeDisparos: 6
+  anguloEntreDisparos: 5.2
+  quantidadeDisparos: 16
 --- !u!1 &1684010303
 GameObject:
   m_ObjectHideFlags: 0

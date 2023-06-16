@@ -26,6 +26,9 @@ Problemas conhecidos
 
 Atualmente, há falhas no input em dispositivos mobile com Android. No entanto, o jogo funciona normalmente em PCs com Windows e Linux.
 
+<iframe width="560" height="315" src="https://youtu.be/aEPwJ4XZwks" frameborder="0" allowfullscreen></iframe>
+
+
 
 Como compilar e executar o jogo
 

@@ -6,7 +6,7 @@ public class jogador : MonoBehaviour
 {
 
  /// alterando vida para teste lembrar de deixar padrao depois
-     private const int QuantidadeMaximasVidas = 5000;
+     private const int QuantidadeMaximasVidas = 5;
 
     public Rigidbody2D rigidbody;
     public float velocidadeMovimento;
