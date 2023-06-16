@@ -26,7 +26,8 @@ Problemas conhecidos
 
 Atualmente, há falhas no input em dispositivos mobile com Android. No entanto, o jogo funciona normalmente em PCs com Windows e Linux.
 
-[![Texto Alternativo](https://img.youtube.com/vi/aEPwJ4XZwks/0.jpg)](https://youtu.be/aEPwJ4XZwks)
+# click no video para ver mais sobre  
+[![click aqui para ver o video ](https://img.youtube.com/vi/aEPwJ4XZwks/0.jpg)](https://youtu.be/aEPwJ4XZwks)
 
 
 
