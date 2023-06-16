@@ -1,4 +1,4 @@
-StarForce
+<h1>StarForce</h1>
 <p align="center">
   <img src="https://i.imgur.com/zzm2EQq.png" alt="Imagem do jogo" />
 </p>
@@ -12,7 +12,7 @@ StarForce é um jogo 2D de nave com história de herói, voltado para dispositiv
     DBA: Rodrigo Souza e Alvaro Richard
     QA: Matheus Rodrigues
 
-Descrição do Projeto
+<h1>Descrição do Projeto</h1>
 
 O jogo StarForce é um jogo 2D de nave que conta a história de um herói. O objetivo do jogo é pilotar a nave pelo espaço, desviar dos obstáculos e inimigos, e chegar o mais longe possível para acumular a maior pontuação.
 
@@ -22,7 +22,7 @@ O jogo é voltado para dispositivos mobile e utiliza a funcionalidade "Engine" p
     using System.Collections.Generic;
     UnityEngine;
 
-Problemas conhecidos
+<h1>Problemas conhecidos</h1>
 
 Atualmente, há falhas no input em dispositivos mobile com Android. No entanto, o jogo funciona normalmente em PCs com Windows e Linux.
 
