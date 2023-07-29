@@ -5,12 +5,12 @@
 
 StarForce é um jogo 2D de nave com história de herói, voltado para dispositivos mobile. O jogo utiliza a engine Unity e foi desenvolvido pelos seguintes membros do grupo:
 
-    Gerente de Projetos: Matheus Rodrigues
-    Arquitetos de Software: Lana Ribeiro e Rodrigo Souza
-    Desenvolvedor GameDesign: Lana Ribeiro
-    Desenvolvedores Back-end: Rodrigo Souza e Alvaro Richard
-    DBA: Rodrigo Souza e Alvaro Richard
-    QA: Matheus 
+Gerente de Projetos: Matheus Rodrigues
+Arquitetos de Software: Lana Ribeiro e Rodrigo Souza
+Desenvolvedor GameDesign: Lana Ribeiro
+Desenvolvedores Back-end: Rodrigo Souza e Alvaro Richard
+DBA: Rodrigo Souza e Alvaro Richard
+QA: Matheus 
 
 <h1>Descrição do Projeto</h1>
 
