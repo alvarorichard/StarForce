@@ -10,7 +10,7 @@ Arquitetos de Software: Lana Ribeiro e Rodrigo Souza
 Desenvolvedor GameDesign: Lana Ribeiro
 Desenvolvedores Back-end: Rodrigo Souza e Alvaro Richard
 DBA: Rodrigo Souza e Alvaro Richard
-QA: Matheus 
+QA: Matheus Rodrigues 
 
 <h1>Descrição do Projeto</h1>
 
