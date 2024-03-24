@@ -1,4 +1,4 @@
-<h1>StarForce</h1>
+
 <p align="center">
   <img src="https://i.imgur.com/BCegXEu.png" alt="Imagem do jogo" />
 </p>
