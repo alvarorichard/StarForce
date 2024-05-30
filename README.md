@@ -27,7 +27,7 @@ UnityEngine;
 
 Atualmente, há falhas no input em dispositivos mobile com Android. No entanto, o jogo funciona normalmente em PCs com Windows e Linux.
 
-<h1><b>Documentação em PDF<b></h1>
+#### Documentação em PDF
 
 link da documentação no driver: https://drive.google.com/drive/folders/1XgPl5bL73bbaG3GzwR8zZmmSgkCHOp7s?usp=sharing
 
