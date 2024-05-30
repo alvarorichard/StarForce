@@ -51,7 +51,6 @@ Para compilar e executar o jogo, siga as instruções abaixo:
 Certifique-se de que todas as dependências do sistema estejam instaladas antes de compilar e executar o jogo. Se você encontrar algum problema durante o processo de compilação ou execução do jogo, consulte o arquivo README.md ou entre em contato com o suporte do jogo.
 Licença
 
-Este projeto é licenciado sob a Licença Pública Geral GNU versão 3 (GPLv3). Consulte o arquivo LICENSE.md para obter mais informações sobre os termos da licença.
-Data de Publicação
+
 
 Este jogo foi publicado em 05/05/2023.
