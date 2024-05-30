@@ -12,7 +12,7 @@ Desenvolvedores Back-end: Rodrigo Souza e Alvaro Richard
 DBA: Rodrigo Souza e Alvaro Richard
 QA: Matheus Rodrigues 
 
-## Descrição do Projeto<
+## Descrição do Projeto
 
 O jogo StarForce é um jogo 2D de nave que conta a história de um herói. O objetivo do jogo é pilotar a nave pelo espaço, desviar dos obstáculos e inimigos, e chegar o mais longe possível para acumular a maior pontuação.
 
