@@ -12,15 +12,16 @@ Desenvolvedores Back-end: Rodrigo Souza e Alvaro Richard
 DBA: Rodrigo Souza e Alvaro Richard
 QA: Matheus Rodrigues 
 
-<h1>Descrição do Projeto</h1>
+## Descrição do Projeto<
 
 O jogo StarForce é um jogo 2D de nave que conta a história de um herói. O objetivo do jogo é pilotar a nave pelo espaço, desviar dos obstáculos e inimigos, e chegar o mais longe possível para acumular a maior pontuação.
 
 O jogo é voltado para dispositivos mobile e utiliza a funcionalidade "Engine" para exibir a pontuação local. Além disso, o jogo utiliza as seguintes bibliotecas:
-
-    using System.Collections;
-    using System.Collections.Generic;
-    UnityEngine;
+```sh
+using System.Collections;
+using System.Collections.Generic;
+UnityEngine;
+```
 
 <h1>Problemas conhecidos</h1>
 
@@ -39,14 +40,14 @@ link do slide: https://view.genial.ly/648b71c82e00760018993135/interactive-conte
 
 <h1>Como compilar e executar o jogo</h1>
 
-Para compilar e executar o jogo, siga as instruções abaixo:
+### Para compilar e executar o jogo, siga as instruções abaixo:
 
-    Baixe todas as bibliotecas necessárias através do Unity Hub.
-    Abra o editor da Unity.
-    Selecione a opção "Build Settings" no menu "File".
-    Escolha a plataforma desejada (por exemplo, Android ou PC).
-    Clique no botão "Build" para compilar o jogo.
-    Execute o jogo a partir do arquivo gerado.
+  Baixe todas as bibliotecas necessárias através do Unity Hub.
+  Abra o editor da Unity.
+  Selecione a opção "Build Settings" no menu "File".
+  Escolha a plataforma desejada (por exemplo, Android ou PC).
+  Clique no botão "Build" para compilar o jogo.
+  Execute o jogo a partir do arquivo gerado.
 
 Certifique-se de que todas as dependências do sistema estejam instaladas antes de compilar e executar o jogo. Se você encontrar algum problema durante o processo de compilação ou execução do jogo, consulte o arquivo README.md ou entre em contato com o suporte do jogo.
 Licença
