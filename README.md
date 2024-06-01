@@ -34,11 +34,11 @@ link da documentação no driver: https://drive.google.com/drive/folders/1XgPl5b
 # click no video para ver mais sobre  
 [![click aqui para ver o video ](https://img.youtube.com/vi/aEPwJ4XZwks/0.jpg)](https://youtu.be/aEPwJ4XZwks)
 
-<h1>Slides da Apresentação</h1>
+### Slides da Apresentação
 link do slide: https://view.genial.ly/648b71c82e00760018993135/interactive-content-starforce
 
 
-<h1>Como compilar e executar o jogo</h1>
+### Como compilar e executar o jogo
 
 ### Para compilar e executar o jogo, siga as instruções abaixo:
 
